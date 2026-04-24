@@ -2,7 +2,6 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: 'self'
+  - job_name: 'api'
     static_configs:
-      - targets: ['localhost:9090']
-
+      - targets: ['172.17.0.1:8000']
